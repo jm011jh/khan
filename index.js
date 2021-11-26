@@ -1,129 +1,133 @@
 //KHAN GOLI info==================================================
-var khangoli5W30 = {
-    name: 'KHAN GOLI 5W-30',
-    style:'FULLY SYNTHETIC GASOLINE',
-    level:'API SP-RC / ILSAC GF-6A',
-    description:'KHAN GOLI is a high performance fully synthetic engine oil, formulated from the latest additives,the cutting-edge technology(TET) and the highest performance synthetic base oil to meet the latest API SP-RC and ILSAC GF-6A specifications. It is developed to provide optimized engine oil performance, especially improved durability and fuel economy with wear protection and friction reduction. In addition, it is suitable for modern vehicles against LSPI.'
-}
-var khangoli0W20 = {
-    name: 'KHAN GOLI 0W-20',
-    style:'FULLY SYNTHETIC GASOLINE',
-    level:'API SP-RC / ILSAC GF-6A',
-    description:'KHAN GOLI is a high performance fully synthetic engine oil, formulated from the latest additives,the cutting-edge technology(TET) and the highest performance synthetic base oil to meet the latest API SP-RC and ILSAC GF-6A specifications. It is developed to provide optimized engine oil performance, especially improved durability and fuel economy with wear protection and friction reduction. In addition, it is suitable for modern vehicles against LSPI.'
-}
-var khangoli0w30 = {
-    name: 'KHAN GOLI 0W-30',
-    style:'FULLY SYNTHETIC GASOLINE',
-    level:'API SP-RC / ILSAC GF-6A',
-    description:'KHAN GOLI is a high performance fully synthetic engine oil, formulated from the latest additives,the cutting-edge technology(TET) and the highest performance synthetic base oil to meet the latest API SP-RC and ILSAC GF-6A specifications. It is developed to provide optimized engine oil performance, especially improved durability and fuel economy with wear protection and friction reduction. In addition, it is suitable for modern vehicles against LSPI.'
-}
-var khangoli10w30 = {
-    name: 'KHAN GOLI 10W-30',
-    style:'FULLY SYNTHETIC GASOLINE',
-    level:'API SP-RC / ILSAC GF-6A',
-}
-var khangoli0w16 = {
-    name: 'KHAN GOLI 0W-16',
+var khangoli01 = {
+    name: '0W-16',
     style:'FULLY SYNTHETIC GASOLINE',
     level:'API SP-RC / ILSAC GF-6B',
 }
-var khangoli5w40 = {
-    name: 'KHAN GOLI 5W-40',
+var khangoli02 = {
+    name: '0W-20',
+    style:'FULLY SYNTHETIC GASOLINE',
+    level:'API SP-RC / ILSAC GF-6A',
+}
+var khangoli03 = {
+    name: '0W-30',
+    style:'FULLY SYNTHETIC GASOLINE',
+    level:'API SP-RC / ILSAC GF-6A',
+}
+var khangoli04 = {
+    name: '5W-30',
+    style:'FULLY SYNTHETIC GASOLINE',
+    level:'API SP-RC / ILSAC GF-6A',
+}
+var khangoli05 = {
+    name: '5W-40',
     style:'FULLY SYNTHETIC GASOLINE',
     level:'API SP-RC',
 }
-var khangoli10w40 = {
-    name: 'KHAN GOLI 10W-40',
+var khangoli06 = {
+    name: '10W-30',
+    style:'FULLY SYNTHETIC GASOLINE',
+    level:'API SP-RC / ILSAC GF-6A',
+}
+
+var khangoli07 = {
+    name: '10W-40',
     style:'FULLY SYNTHETIC GASOLINE',
     level:'API SP-RC',
 }
+const khanGoliProduct = [khangoli01,khangoli02,khangoli03,khangoli04,khangoli05,khangoli06,khangoli07]
+const khanGoli = $('#khanGoli')
 //KHAN PAO info==================================================
-var khanpao0w30 = {
-    name: 'KHAN PAO 0W-30',
+var khanpao01 = {
+    name: '0W-30',
     style:'FULLY SYNTHETIC GASOLINE',
     level:'API SN/CF ACEA C2-12, ACEA A5/B5-12 MB 229.31/229.51, VW 502.00/505.00, BMW LL-04',
 }
-var khanpao0w40 = {
-    name: 'KHAN PAO 0W-40',
+var khanpao02 = {
+    name: '0W-40',
     style:'FULLY SYNTHETIC GASOLINE',
     level:'API SN/CF ACEA C3 MB 229.31/229.51, VW 502.00/505.00, BMW LL-04',
 }
-var khanpao5w30 = {
-    name: 'KHAN PAO 5W-30',
+var khanpao03 = {
+    name: '5W-30',
     style:'FULLY SYNTHETIC GASOLINE',
     level:'API SN ACEA A3/B4 MB229.3, VW502.00 / 505.00'
 }
-var khanpao5w40 = {
-    name: 'KHAN PAO 5W-40',
+var khanpao04 = {
+    name: '5W-40',
     style:'FULLY SYNTHETIC GASOLINE',
     level:'API SN/CF ACEA C3-12, API SN BMW LL-04, MB 229.31/229.51, VW 502.00/505.01'
 }
-var khanpao0w20 = {
-    name: 'KHAN PAO 0W-20',
+var khanpao05 = {
+    name: '0W-20',
     style:'FULLY SYNTHETIC GASOLINE',
     level:'API SN/CF ACEA C3, ACEA A3/B4 MB 229.31/229.51, VW 502.00/505.01, BMW LL-04'
 }
-var khanpao5w50 = {
-    name: 'KHAN PAO 5W-50',
+var khanpao06 = {
+    name: '5W-50',
     style:'FULLY SYNTHETIC GASOLINE',
     level:'API SN/CF ACEA C3, ACEA A3/B4 MB 229.31/229.51, VW 502.00/505.01, BMW LL-04'
 }
+const khanPaoProduct = [khanpao01,khanpao02,khanpao03,khanpao04,khanpao05,khanpao06]
+const khanPao = $('#khanPao')
 //KHAN G info==================================================
-var khang0w16 = {
-    name: 'KHAN G 0W-16',
+var khang01 = {
+    name: '0W-16',
     style:'FULLY SYNTHETIC GASOLINE',
     level:'API SN, ILSAC GF-5'
 }
-var khang0w20 = {
-    name: 'KHAN G 0W-20',
+var khang02 = {
+    name: '0W-20',
     style:'FULLY SYNTHETIC GASOLINE',
     level:'API SN-RC/CF, ILSAC GF-5'
 }
-var khang0w30 = {
-    name: 'KHAN G 0W-30',
+var khang03 = {
+    name: '0W-30',
     style:'FULLY SYNTHETIC GASOLINE',
     level:'API SN-RC/CF, ILSAC GF-5'
 }
-var khang0w40 = {
-    name: 'KHAN G',
+var khang04 = {
+    name: '0W-40',
     style:'FULLY SYNTHETIC GASOLINE',
     level:'API SN/CF'
 }
-var khang5w20 = {
-    name: 'KHAN G 5W-20',
+var khang05 = {
+    name: ' 5W-20',
     style:'FULLY SYNTHETIC GASOLINE',
     level:'API SN-RC/CF, ILSAC GF-5'
 }
-var khang5w30 = {
-    name: 'KHAN G 5W-30',
+var khang06 = {
+    name: '5W-30',
     style:'FULLY SYNTHETIC GASOLINE',
     level:'API SN/CF MB 229.3, VW502.00/505.00 GM dexos1(First Generation)'
 }
-var khang5w40 = {
-    name: 'KHAN G 5W-40',
+var khang07 = {
+    name: '5W-40',
     style:'FULLY SYNTHETIC GASOLINE',
     level:'API SN/CF'
 }
-var khang5w50 = {
-    name: 'KHAN G 5W-50',
+var khang08 = {
+    name: '5W-50',
     style:'FULLY SYNTHETIC GASOLINE',
     level:'API SN/CF'
 }
-var khang10w30 = {
-    name: 'KHAN G 10W-30',
+var khang09 = {
+    name: '10W-30',
     style:'FULLY SYNTHETIC GASOLINE',
     level:'API SN-RC/CF, ILSAC GF-5'
 }
-var khang10w40 = {
-    name: 'KHAN G 10W-40',
+var khang10 = {
+    name: '10W-40',
     style:'FULLY SYNTHETIC GASOLINE',
     level:'API SN/CF MB 229.3, VW502.00/505.00'
 }
-var khang20w50 = {
-    name: 'KHAN G 20W-50',
+var khang11 = {
+    name: '20W-50',
     style:'FULLY SYNTHETIC GASOLINE',
     level:'API SN/CF'
 }
+const khanGProduct = [khanpao01,khanpao02,khanpao03,khanpao04,khanpao05,khanpao06,khang07,khang08,khang09,khang10,khang11]
+const khanG = $('#khanG')
 //KHAN G-SL ...waiting...==================================================
 
 //KHAN D info==================================================
@@ -247,3 +251,41 @@ var khanaw68 = {
     level:'ISO VG 68'
 }
 //KHAN HYDRAULIC HV ...waiting...==================================================
+
+//making object event=====================================================================
+function insertPdBtn(parent,product){//parent=jquery-selector, product=array
+    for(i=0;i<product.length;i++){
+        var name = product[i].name;
+        var style = product[i].style;
+        var level = product[i].level;
+        var li = $('<li data-name="'+name+'" data-style="'+style+'" data-level="'+level+'" class="series__product_text6listitem">'+name+'</li>');
+        parent.find('.series__product_text6list').append(li.clone())
+    }
+    console.log('hi')
+    parent.find('.series__product_text6listitem:first-child').addClass('clicked')
+}
+insertPdBtn(khanGoli,khanGoliProduct)
+insertPdBtn(khanPao,khanPaoProduct)
+insertPdBtn(khanG,khanGProduct)
+
+
+//main event==============================================================================
+$('.series__name_listitem').click(function(){
+    idx = $(this).index()
+    $('li.series__product_listitem').removeClass('selected')
+    $('li.series__product_listitem').eq(idx).addClass('selected')
+})
+$('.series__product_text6listitem').click(function(){
+    var parent = $(this).closest('li.series__product_listitem');
+    var style = $(this).attr('data-style');
+    var level = $(this).attr('data-level');
+    parent.find('.series__product_text4').text(level)
+    parent.find('.series__product_text9').text(style)
+
+    $('.series__product_text6listitem').removeClass('clicked')
+    $(this).addClass('clicked')
+})
+$('.series__product_text8 .volume_size').click(function(){
+    $('.series__product_text8 .volume_size').removeClass('clicked')
+    $(this).addClass('clicked')
+})
