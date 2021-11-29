@@ -12,7 +12,7 @@
 <div class="series__container">
     <div class="series__name_container">
         <ul class="series__name_list">
-            <li data-series="khanGoli" class="series__name_listitem"><p>KHAN GOLI</p></li>
+            <li data-series="khanGoli" class="series__name_listitem selected"><p>KHAN GOLI</p></li>
             <li data-series="khanPao" class="series__name_listitem"><p>KHAN PAO</p></li>
             <li data-series="khanG" class="series__name_listitem"><p>KHAN G</p></li>
             <!--<li data-series="khan" class="series__name_listitem"><p>KHAN G-SL</p></li> -->
@@ -23,18 +23,24 @@
             <!--<li data-series="khanc5" class="series__name_listitem"><p>KHAN C-5</p></li> -->
             <!--<li data-series="khanc3" class="series__name_listitem"><p>KHAN C-3</p></li> -->
             <li data-series="khanBike" class="series__name_listitem"><p>KHAN BIKE</p></li>
-            <li data-series="khanMtf" class="series__name_listitem"><p>KHAN MTF GL-5<br>비스트 절도지수/스펙 활용</p></li>
-            <li data-series="khanAtf" class="series__name_listitem"><p>KHAN ATF<br>비스트 절도지수/스펙 활용</p></li>
-            <li data-series="khanAw" class="series__name_listitem"><p>KHAN HYDRAULIC AW<br>비스트 절도지수/스펙 활용</p></li>
-            <!-- <li data-series="khanHv" class="series__name_listitem"><p>KHAN HYDRAULIC HV<br>비스트 절도지수/스펙 활용</p></li> -->
+            <li data-series="khanMtf" class="series__name_listitem"><p>KHAN MTF GL-5</p></li>
+            <li data-series="khanAtf" class="series__name_listitem"><p>KHAN ATF</p></li>
+            <!-- <li data-series="khanAw" class="series__name_listitem"><p>KHAN HYDRAULIC AW</p></li> -->
+            <!-- <li data-series="khanHv" class="series__name_listitem"><p>KHAN HYDRAULIC HV</p></li> -->
         </ul>
     </div>
     <div class="series__product_container">
         <ul class="series__product_list">
             <li id="khanGoli" class="series__product_listitem selected"><!-- #region khan goli -->
                 <div class="series__product_image_container">
-                    <ul class="series__product_image_list"><!-- khan goli img by size -->
-                        <li class="series__product_image_listitem">image here<img src="이미지경로" alt=""></li>
+                    <ul class="series__product_image_list "><!-- khan goli img by size -->
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan1l selected"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/1L_GOLI.png" alt="goli can 1L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan4l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/4L_GOLI.png" alt="goli can 4L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan20l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/20L_Goli.png" alt="goli can 20L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan200l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/product_200L.png" alt="goli can 200L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_plastic1l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/1L_GOLI.png" alt="goli plastic 1L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_plastic4l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/4L_GOLI.png" alt="goli plastic 4L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_plastic6l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/6L_GOLI.png" alt="goli plastic 6L"></li>
                     </ul>
                 </div>
                 <div class="series__product_text_container">
@@ -56,18 +62,18 @@
                             <div class="volume_tincan">
                                 <div class="volume_title series__small_tit text_bold">Tincan</div>
                                 <ul class="volume_sizelist">
-                                    <li data-size="tincan1l" class="volume_size series__small_tit clicked">1L</li>
-                                    <li data-size="tincan4l" class="volume_size series__small_tit">4L</li>
-                                    <li data-size="tincan20l" class="volume_size series__small_tit">20L</li>
-                                    <li data-size="tincan200l" class="volume_size series__small_tit">200L</li>
+                                    <li data-type="tincan" data-size="1l" class="volume_size series__small_tit clicked">1L</li>
+                                    <li data-type="tincan" data-size="4l" class="volume_size series__small_tit">4L</li>
+                                    <li data-type="tincan" data-size="20l" class="volume_size series__small_tit">20L</li>
+                                    <li data-type="tincan" data-size="200l" class="volume_size series__small_tit">200L</li>
                                 </ul>
                             </div>
                             <div class="volume_plastic">
                                 <div class="volume_title series__small_tit text_bold">Plastic</div>
                                 <ul class="volume_sizelist">
-                                    <li data-size="plastic1l" class="volume_size series__small_tit">1L</li>
-                                    <li data-size="plastic4l" class="volume_size series__small_tit">4L</li>
-                                    <li data-size="plastic6l" class="volume_size series__small_tit">6L</li>
+                                    <li data-type="plastic" data-size="1l" class="volume_size series__small_tit">1L</li>
+                                    <li data-type="plastic" data-size="4l" class="volume_size series__small_tit">4L</li>
+                                    <li data-type="plastic" data-size="6l" class="volume_size series__small_tit">6L</li>
                                 </ul>
                             </div>
                         </div>
@@ -77,9 +83,9 @@
                         <div class="series__product_text10 series__small_tit">KHAN GOLI is a high performance fully synthetic engine oil, formulated from the latest additives,the cutting-edge technology(TET) and the highest performance synthetic base oil to meet the latest API SP-RC and ILSAC GF-6A specifications. It is developed to provide optimized engine oil performance, especially improved durability and fuel economy with wear protection and friction reduction. In addition, it is suitable for modern vehicles against LSPI.</div>
                     </div>
                     <div class="series__product_text11">
-                        <img class="series__product_logo1" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-3.png" alt="img_logo1">
-                        <img class="series__product_logo2" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-2.jpg" alt="img_logo2">
-                        <img class="series__product_logo3" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-1.jpg" alt="img_logo3">
+                        <img class="series__product_logo series__product_logo1 true" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-3.png" alt="img_logo1">
+                        <img class="series__product_logo series__product_logo2 false" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-2.jpg" alt="img_logo2">
+                        <img class="series__product_logo series__product_logo3 true" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-1.jpg" alt="img_logo3">
                     </div>
                 </div>
 
@@ -87,7 +93,13 @@
             <li id="khanPao" class="series__product_listitem"><!-- #region khan pao -->
                 <div class="series__product_image_container">
                     <ul class="series__product_image_list"><!-- khan pao img by size -->
-                        <li class="series__product_image_listitem">image here<img src="이미지경로" alt=""></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan1l selected"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/1L_PAO.png" alt="goli can 1L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan4l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/4L_PAO.png" alt="goli can 4L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan20l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/20L_PAO.png" alt="goli can 20L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan200l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/product_200L.png" alt="goli can 200L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_plastic1l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/1L_PAO.png" alt="goli plastic 1L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_plastic4l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/4L_PAO.png" alt="goli plastic 4L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_plastic6l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/6L_PAO.png" alt="goli plastic 6L"></li>
                     </ul>
                 </div>
                 <div class="series__product_text_container">
@@ -109,18 +121,18 @@
                             <div class="volume_tincan">
                                 <div class="volume_title series__small_tit text_bold">Tincan</div>
                                 <ul class="volume_sizelist">
-                                    <li data-size="tincan1l" class="volume_size series__small_tit">1L</li>
-                                    <li data-size="tincan4l" class="volume_size series__small_tit">4L</li>
-                                    <li data-size="tincan20l" class="volume_size series__small_tit">20L</li>
-                                    <li data-size="tincan200l" class="volume_size series__small_tit">200L</li>
+                                    <li data-type="tincan" data-size="1l" class="volume_size series__small_tit clicked">1L</li>
+                                    <li data-type="tincan" data-size="4l" class="volume_size series__small_tit">4L</li>
+                                    <li data-type="tincan" data-size="20l" class="volume_size series__small_tit">20L</li>
+                                    <li data-type="tincan" data-size="200l" class="volume_size series__small_tit">200L</li>
                                 </ul>
                             </div>
                             <div class="volume_plastic">
                                 <div class="volume_title series__small_tit text_bold">Plastic</div>
                                 <ul class="volume_sizelist">
-                                    <li data-size="plastic1l" class="volume_size series__small_tit">1L</li>
-                                    <li data-size="plastic4l" class="volume_size series__small_tit">4L</li>
-                                    <li data-size="plastic6l" class="volume_size series__small_tit">6L</li>
+                                    <li data-type="plastic" data-size="1l" class="volume_size series__small_tit">1L</li>
+                                    <li data-type="plastic" data-size="4l" class="volume_size series__small_tit">4L</li>
+                                    <li data-type="plastic" data-size="6l" class="volume_size series__small_tit">6L</li>
                                 </ul>
                             </div>
                         </div>
@@ -130,17 +142,23 @@
                         <div class="series__product_text10 series__small_tit">KHAN PAO is a high performance fully synthetic engine oil, formulated from the latest additives,the cutting-edge technology(TET) and PAO (Poly Alpha Olefin).  It is developed to provide optimized engine oil performance, especially improved durability and fuel economy with wear protection and friction reduction. In addition, it is suitable for passenger car and light truck gasoline engines and passenger car diesel engines.</div>
                     </div>
                     <div class="series__product_text11">
-                        <img class="series__product_logo1" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-3.png" alt="img_logo1">
-                        <img class="series__product_logo2" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-2.jpg" alt="img_logo2">
-                        <img class="series__product_logo3" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-1.jpg" alt="img_logo3">
+                        <img class="series__product_logo series__product_logo1 false" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-3.png" alt="img_logo1">
+                        <img class="series__product_logo series__product_logo2 false" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-2.jpg" alt="img_logo2">
+                        <img class="series__product_logo series__product_logo3 false" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-1.jpg" alt="img_logo3">
                     </div>
                 </div>
 
-            </li><!-- #endregion khan goli-->
+            </li><!-- #endregion khan pao-->
             <li id="khanG" class="series__product_listitem"><!-- #region khan g -->
                 <div class="series__product_image_container">
                     <ul class="series__product_image_list"><!-- khan g img by size -->
-                        <li class="series__product_image_listitem">image here<img src="이미지경로" alt=""></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan1l selected"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/1L_G.png" alt="goli can 1L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan4l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/4L_G.png" alt="goli can 4L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan20l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/20L_G.png" alt="goli can 20L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan200l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/product_200L.png" alt="goli can 200L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_plastic1l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/1L_G.png" alt="goli plastic 1L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_plastic4l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/4L_G.png" alt="goli plastic 4L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_plastic6l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/6L_G.png" alt="goli plastic 6L"></li>
                     </ul>
                 </div>
                 <div class="series__product_text_container">
@@ -162,18 +180,18 @@
                             <div class="volume_tincan">
                                 <div class="volume_title series__small_tit text_bold">Tincan</div>
                                 <ul class="volume_sizelist">
-                                    <li data-size="tincan1l" class="volume_size series__small_tit">1L</li>
-                                    <li data-size="tincan4l" class="volume_size series__small_tit">4L</li>
-                                    <li data-size="tincan20l" class="volume_size series__small_tit">20L</li>
-                                    <li data-size="tincan200l" class="volume_size series__small_tit">200L</li>
+                                    <li data-type="tincan" data-size="1l" class="volume_size series__small_tit clicked">1L</li>
+                                    <li data-type="tincan" data-size="4l" class="volume_size series__small_tit">4L</li>
+                                    <li data-type="tincan" data-size="20l" class="volume_size series__small_tit">20L</li>
+                                    <li data-type="tincan" data-size="200l" class="volume_size series__small_tit">200L</li>
                                 </ul>
                             </div>
                             <div class="volume_plastic">
                                 <div class="volume_title series__small_tit text_bold">Plastic</div>
                                 <ul class="volume_sizelist">
-                                    <li data-size="plastic1l" class="volume_size series__small_tit">1L</li>
-                                    <li data-size="plastic4l" class="volume_size series__small_tit">4L</li>
-                                    <li data-size="plastic6l" class="volume_size series__small_tit">6L</li>
+                                    <li data-type="plastic" data-size="1l" class="volume_size series__small_tit">1L</li>
+                                    <li data-type="plastic" data-size="4l" class="volume_size series__small_tit">4L</li>
+                                    <li data-type="plastic" data-size="6l" class="volume_size series__small_tit">6L</li>
                                 </ul>
                             </div>
                         </div>
@@ -183,13 +201,308 @@
                         <div class="series__product_text10 series__small_tit">KHAN G is fully synthetic engine oil formulated from the finest base oils ,the lastest additives and the cutting-edge technology(TET). It is developed to provide excellent oxidation stability and corrosion resistance, protecting engines and extending engine oil lifetime with excellent performance. In addition, it is suitable for all gasoline engines and vehicles equiped with modern engine technology.</div>
                     </div>
                     <div class="series__product_text11">
-                        <img class="series__product_logo1" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-3.png" alt="img_logo1">
-                        <img class="series__product_logo2" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-2.jpg" alt="img_logo2">
-                        <img class="series__product_logo3" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-1.jpg" alt="img_logo3">
+                        <img class="series__product_logo series__product_logo1 false" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-3.png" alt="img_logo1">
+                        <img class="series__product_logo series__product_logo2 true" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-2.jpg" alt="img_logo2">
+                        <img class="series__product_logo series__product_logo3 false" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-1.jpg" alt="img_logo3">
                     </div>
                 </div>
 
-            </li><!-- #endregion khan goli-->
+            </li><!-- #endregion khan g-->
+            <li id="khanD" class="series__product_listitem"><!-- #region khan d -->
+                <div class="series__product_image_container">
+                    <ul class="series__product_image_list"><!-- khan d img by size -->
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan1l selected"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/1L_D.png" alt="goli can 1L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan4l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/4L_D.png" alt="goli can 4L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan20l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/20L_D.png" alt="goli can 20L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan200l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/product_200L.png" alt="goli can 200L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_plastic1l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/1L_D.png" alt="goli plastic 1L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_plastic4l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/4L_D.png" alt="goli plastic 4L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_plastic6l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/6L_D.png" alt="goli plastic 6L"></li>
+                    </ul>
+                </div>
+                <div class="series__product_text_container">
+                    <div class="series__product_text1 series__main_tit">KHAN D</div>
+                    <div class="series__product_sub_wrap">
+                        <div class="series__product_text2 series__sub_tit">PERFORMANCE LEVEL</div>
+                        <div class="series__product_text3 series__small_tit">Meets the requirements of</div>
+                        <div class="series__product_text4 series__small_tit text_bold">API SN/CF ACEA C3, ACEA A3/B4 MB 229.31, 229.51 / VW 502.00, 505.01 /BMW LL-04</div><!--object.level-->
+                    </div>
+                    <div class="series__product_sub_wrap">
+                        <div class="series__product_text5 series__sub_tit">VISCOSITY</div>
+                        <ul class="series__product_text6list">
+                            <!--object.name-->
+                        </ul>
+                    </div>
+                    <div class="series__product_sub_wrap">
+                        <div class="series__product_text7 series__sub_tit">Pakage size</div>
+                        <div class="series__product_text8">
+                            <div class="volume_tincan">
+                                <div class="volume_title series__small_tit text_bold">Tincan</div>
+                                <ul class="volume_sizelist">
+                                    <li data-type="tincan" data-size="1l" class="volume_size series__small_tit clicked">1L</li>
+                                    <li data-type="tincan" data-size="4l" class="volume_size series__small_tit">4L</li>
+                                    <li data-type="tincan" data-size="20l" class="volume_size series__small_tit">20L</li>
+                                    <li data-type="tincan" data-size="200l" class="volume_size series__small_tit">200L</li>
+                                </ul>
+                            </div>
+                            <div class="volume_plastic">
+                                <div class="volume_title series__small_tit text_bold">Plastic</div>
+                                <ul class="volume_sizelist">
+                                    <li data-type="plastic" data-size="1l" class="volume_size series__small_tit">1L</li>
+                                    <li data-type="plastic" data-size="4l" class="volume_size series__small_tit">4L</li>
+                                    <li data-type="plastic" data-size="6l" class="volume_size series__small_tit">6L</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series__product_sub_wrap">
+                        <div class="series__product_text9 series__sub_tit">FULLY SYNTHETIC GASOLINE</div><!--object.style-->
+                        <div class="series__product_text10 series__small_tit">KHAN D is fully synthetic engine oil formulated from the finest base oils , the lastest additives and the cutting-edge technology(TET). It is developed to provide excellent fluidity at low temperatures and maintain the efficiency of the Exhaust Emission Reduction systems, protecting engines and extending engine oil lifetime with excellent performance. In addition, it is suitable for passenger cars with gasoline and diesel engine, and diesel vehicles equiped with EGR, DPF.</div>
+                    </div>
+                    <div class="series__product_text11">
+                        <img class="series__product_logo series__product_logo1 false" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-3.png" alt="img_logo1">
+                        <img class="series__product_logo series__product_logo2 false" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-2.jpg" alt="img_logo2">
+                        <img class="series__product_logo series__product_logo3 false" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-1.jpg" alt="img_logo3">
+                    </div>
+                </div>
+
+            </li><!-- #endregion khan d-->
+            <li id="khanC" class="series__product_listitem"><!-- #region khan c -->
+                <div class="series__product_image_container">
+                    <ul class="series__product_image_list"><!-- khan d img by size -->
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan1l selected"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/1L_C.png" alt="c can 1L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan4l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/4L_C.png" alt="c can 4L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan20l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/20L_C.png" alt="c can 20L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan200l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/product_200L.png" alt="c can 200L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_plastic1l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/1L_C.png" alt="c plastic 1L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_plastic4l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/4L_C.png" alt="c plastic 4L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_plastic6l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/6L_C.png" alt="c plastic 6L"></li>
+                    </ul>
+                </div>
+                <div class="series__product_text_container">
+                    <div class="series__product_text1 series__main_tit">KHAN C</div>
+                    <div class="series__product_sub_wrap">
+                        <div class="series__product_text2 series__sub_tit">PERFORMANCE LEVEL</div>
+                        <div class="series__product_text3 series__small_tit">Meets the requirements of</div>
+                        <div class="series__product_text4 series__small_tit text_bold">API CK-4 ACEA E7, E9 MERCEDES-BENZ : MB 228.31 Cummins : CES 20086 Volvo : VDS-4.5  Mack : EO-S-4.5 MTU : Category 2.1 Renault Truck : RLD-4 Detroit : DFS93K222  Caterpillar : ECF-3 Deutz : DQC lll-10 LA  Ford WSS-M2C171-F1</div><!--object.level-->
+                    </div>
+                    <div class="series__product_sub_wrap">
+                        <div class="series__product_text5 series__sub_tit">VISCOSITY</div>
+                        <ul class="series__product_text6list">
+                            <!--object.name-->
+                        </ul>
+                    </div>
+                    <div class="series__product_sub_wrap">
+                        <div class="series__product_text7 series__sub_tit">Pakage size</div>
+                        <div class="series__product_text8">
+                            <div class="volume_tincan">
+                                <div class="volume_title series__small_tit text_bold">Tincan</div>
+                                <ul class="volume_sizelist">
+                                    <li data-type="tincan" data-size="1l" class="volume_size series__small_tit clicked">1L</li>
+                                    <li data-type="tincan" data-size="4l" class="volume_size series__small_tit">4L</li>
+                                    <li data-type="tincan" data-size="20l" class="volume_size series__small_tit">20L</li>
+                                    <li data-type="tincan" data-size="200l" class="volume_size series__small_tit">200L</li>
+                                </ul>
+                            </div>
+                            <div class="volume_plastic">
+                                <div class="volume_title series__small_tit text_bold">Plastic</div>
+                                <ul class="volume_sizelist">
+                                    <li data-type="plastic" data-size="1l" class="volume_size series__small_tit">1L</li>
+                                    <li data-type="plastic" data-size="4l" class="volume_size series__small_tit">4L</li>
+                                    <li data-type="plastic" data-size="6l" class="volume_size series__small_tit">6L</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series__product_sub_wrap">
+                        <div class="series__product_text9 series__sub_tit">SYNTHETIC GASOLINE</div><!--object.style-->
+                        <div class="series__product_text10 series__small_tit">KHAN C-7 is fully synthetic engine oil formulated from the finest base oils ,the lastest additives and the cutting-edge technology(TET). It is developed to provide outstanding engine protection and corrosion resistance, protecting engines and extending engine oil lifetime under modern engine's severe conditions. In addition, it is suitable for all heavy-duty engines and    for vehicles equipped with after-treatment devices including DPF, FGR and SCR.</div>
+                    </div>
+                    <div class="series__product_text11">
+                        <img class="series__product_logo series__product_logo1 false" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-3.png" alt="img_logo1">
+                        <img class="series__product_logo series__product_logo2 false" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-2.jpg" alt="img_logo2">
+                        <img class="series__product_logo series__product_logo3 false" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-1.jpg" alt="img_logo3">
+                    </div>
+                </div>
+
+            </li><!-- #endregion khan c-->
+            <li id="khanBike" class="series__product_listitem"><!-- #region khan bike -->
+                <div class="series__product_image_container">
+                    <ul class="series__product_image_list"><!-- khan d img by size -->
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan1l selected"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/1L_BIKE.png" alt="c can 1L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan4l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/4L_BIKE.png" alt="c can 4L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan20l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/20L_BIKE.png" alt="c can 20L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan200l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/product_200L.png" alt="c can 200L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_plastic1l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/1L_BIKE.png" alt="c plastic 1L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_plastic4l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/4L_BIKE.png" alt="c plastic 4L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_plastic6l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/6L_BIKE.png" alt="c plastic 6L"></li>
+                    </ul>
+                </div>
+                <div class="series__product_text_container">
+                    <div class="series__product_text1 series__main_tit">KHAN BIKE</div>
+                    <div class="series__product_sub_wrap">
+                        <div class="series__product_text2 series__sub_tit">PERFORMANCE LEVEL</div>
+                        <div class="series__product_text3 series__small_tit">Meets the requirements of</div>
+                        <div class="series__product_text4 series__small_tit text_bold">API SN JASO MB</div><!--object.level-->
+                    </div>
+                    <div class="series__product_sub_wrap">
+                        <div class="series__product_text5 series__sub_tit">VISCOSITY</div>
+                        <ul class="series__product_text6list">
+                            <!--object.name-->
+                        </ul>
+                    </div>
+                    <div class="series__product_sub_wrap">
+                        <div class="series__product_text7 series__sub_tit">Pakage size</div>
+                        <div class="series__product_text8">
+                            <div class="volume_tincan">
+                                <div class="volume_title series__small_tit text_bold">Tincan</div>
+                                <ul class="volume_sizelist">
+                                    <li data-type="tincan" data-size="1l" class="volume_size series__small_tit clicked">1L</li>
+                                    <li data-type="tincan" data-size="4l" class="volume_size series__small_tit">4L</li>
+                                    <!-- <li data-type="tincan" data-size="20l" class="volume_size series__small_tit">20L</li> -->
+                                    <li data-type="tincan" data-size="200l" class="volume_size series__small_tit">200L</li>
+                                </ul>
+                            </div>
+                            <div class="volume_plastic">
+                                <div class="volume_title series__small_tit text_bold">Plastic</div>
+                                <ul class="volume_sizelist">
+                                    <li data-type="plastic" data-size="1l" class="volume_size series__small_tit">1L</li>
+                                    <!-- <li data-type="plastic" data-size="4l" class="volume_size series__small_tit">4L</li> -->
+                                    <!-- <li data-type="plastic" data-size="6l" class="volume_size series__small_tit">6L</li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series__product_sub_wrap">
+                        <div class="series__product_text9 series__sub_tit">SYNTHETIC GASOLINE</div><!--object.style-->
+                        <div class="series__product_text10 series__small_tit">KHAN C-7 is fully synthetic engine oil formulated from the finest base oils ,the lastest additives and the cutting-edge technology(TET). It is developed to provide outstanding engine protection and corrosion resistance, protecting engines and extending engine oil lifetime under modern engine's severe conditions. In addition, it is suitable for all heavy-duty engines and    for vehicles equipped with after-treatment devices including DPF, FGR and SCR.</div>
+                    </div>
+                    <div class="series__product_text11">
+                        <img class="series__product_logo series__product_logo1 false" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-3.png" alt="img_logo1">
+                        <img class="series__product_logo series__product_logo2 false" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-2.jpg" alt="img_logo2">
+                        <img class="series__product_logo series__product_logo3 false" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-1.jpg" alt="img_logo3">
+                    </div>
+                </div>
+
+            </li><!-- #endregion khan bike-->
+            <li id="khanMtf" class="series__product_listitem"><!-- #region khan mtf -->
+                <div class="series__product_image_container">
+                    <ul class="series__product_image_list"><!-- khan mtf img by size -->
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan1l selected"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/1L_MTF.png" alt="MTF can 1L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan4l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/4L_MTF.png" alt="MTF can 4L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan20l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/20L_MTF.png" alt="MTF can 20L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan200l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/product_200L.png" alt="MTF can 200L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_plastic1l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/1L_MTF.png" alt="MTF plastic 1L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_plastic4l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/4L_MTF.png" alt="MTF plastic 4L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_plastic6l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/6L_MTF.png" alt="MTF plastic 6L"></li>
+                    </ul>
+                </div>
+                <div class="series__product_text_container">
+                    <div class="series__product_text1 series__main_tit">KHAN MTF GL-5</div>
+                    <div class="series__product_sub_wrap">
+                        <div class="series__product_text2 series__sub_tit">PERFORMANCE LEVEL</div>
+                        <div class="series__product_text3 series__small_tit">Meets the requirements of</div>
+                        <div class="series__product_text4 series__small_tit text_bold">API GL-5 MIL-L-2105D</div><!--object.level-->
+                    </div>
+                    <div class="series__product_sub_wrap">
+                        <div class="series__product_text5 series__sub_tit">VISCOSITY</div>
+                        <ul class="series__product_text6list">
+                            <!--object.name-->
+                        </ul>
+                    </div>
+                    <div class="series__product_sub_wrap">
+                        <div class="series__product_text7 series__sub_tit">Pakage size</div>
+                        <div class="series__product_text8">
+                            <div class="volume_tincan">
+                                <div class="volume_title series__small_tit text_bold">Tincan</div>
+                                <ul class="volume_sizelist">
+                                    <li data-type="tincan" data-size="1l" class="volume_size series__small_tit clicked">1L</li>
+                                    <li data-type="tincan" data-size="4l" class="volume_size series__small_tit">4L</li>
+                                    <li data-type="tincan" data-size="20l" class="volume_size series__small_tit">20L</li>
+                                    <li data-type="tincan" data-size="200l" class="volume_size series__small_tit">200L</li>
+                                </ul>
+                            </div>
+                            <div class="volume_plastic">
+                                <div class="volume_title series__small_tit text_bold">Plastic</div>
+                                <ul class="volume_sizelist">
+                                    <li data-type="plastic" data-size="1l" class="volume_size series__small_tit">1L</li>
+                                    <li data-type="plastic" data-size="4l" class="volume_size series__small_tit">4L</li>
+                                    <!-- <li data-type="plastic" data-size="6l" class="volume_size series__small_tit">6L</li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series__product_sub_wrap">
+                        <div class="series__product_text9 series__sub_tit">Manual Transmission Fluid</div><!--object.style-->
+                        <div class="series__product_text10 series__small_tit">KHAN MTF GL-5 is a high-performance gear oil and differential oil formulated with advanced additives technology. It is designed specially for high loaded hypoid gears and mechanisms running under severe loads and requiring API GL-5 lubricants. It provides wear resistance and oxidation stability for long equipment life. It also offers superior performance in rear wheeled vehicles and heavy equipment with differential axles.</div>
+                    </div>
+                    <div class="series__product_text11">
+                        <img class="series__product_logo series__product_logo1 false" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-3.png" alt="img_logo1">
+                        <img class="series__product_logo series__product_logo2 false" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-2.jpg" alt="img_logo2">
+                        <img class="series__product_logo series__product_logo3 false" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-1.jpg" alt="img_logo3">
+                    </div>
+                </div>
+
+            </li><!-- #endregion khan mtf-->
+            <li id="khanAtf" class="series__product_listitem"><!-- #region khan atf -->
+                <div class="series__product_image_container">
+                    <ul class="series__product_image_list"><!-- khan mtf img by size -->
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan1l selected"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/1L_ATF-1.png" alt="MTF can 1L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan4l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/4L_ATF-2.png" alt="MTF can 4L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan20l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/20L_ATF.png" alt="MTF can 20L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan200l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/product_200L.png" alt="MTF can 200L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_plastic1l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/1L_ATF-1.png" alt="MTF plastic 1L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_plastic4l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/4L_ATF-1.png" alt="MTF plastic 4L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_plastic6l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/6L_ATF-1.png" alt="MTF plastic 6L"></li>
+                    </ul>
+                </div>
+                <div class="series__product_text_container">
+                    <div class="series__product_text1 series__main_tit">KHAN ATF GL-5</div>
+                    <div class="series__product_sub_wrap">
+                        <div class="series__product_text2 series__sub_tit">PERFORMANCE LEVEL</div>
+                        <div class="series__product_text3 series__small_tit">Meets the requirements of</div>
+                        <div class="series__product_text4 series__small_tit text_bold">Dexron IIIH/M | Allison C-4</div><!--object.level-->
+                    </div>
+                    <div class="series__product_sub_wrap">
+                        <div class="series__product_text5 series__sub_tit">VISCOSITY</div>
+                        <ul class="series__product_text6list">
+                            <!--object.name-->
+                        </ul>
+                    </div>
+                    <div class="series__product_sub_wrap">
+                        <div class="series__product_text7 series__sub_tit">Pakage size</div>
+                        <div class="series__product_text8">
+                            <div class="volume_tincan">
+                                <div class="volume_title series__small_tit text_bold">Tincan</div>
+                                <ul class="volume_sizelist">
+                                    <li data-type="tincan" data-size="1l" class="volume_size series__small_tit clicked">1L</li>
+                                    <li data-type="tincan" data-size="4l" class="volume_size series__small_tit">4L</li>
+                                    <li data-type="tincan" data-size="20l" class="volume_size series__small_tit">20L</li>
+                                    <li data-type="tincan" data-size="200l" class="volume_size series__small_tit">200L</li>
+                                </ul>
+                            </div>
+                            <div class="volume_plastic">
+                                <div class="volume_title series__small_tit text_bold">Plastic</div>
+                                <ul class="volume_sizelist">
+                                    <li data-type="plastic" data-size="1l" class="volume_size series__small_tit">1L</li>
+                                    <li data-type="plastic" data-size="4l" class="volume_size series__small_tit">4L</li>
+                                    <!-- <li data-type="plastic" data-size="6l" class="volume_size series__small_tit">6L</li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series__product_sub_wrap">
+                        <div class="series__product_text9 series__sub_tit">SYNTHETIC ATF</div><!--object.style-->
+                        <div class="series__product_text10 series__small_tit">KHAN MTF GL-5 is a high-performance gear oil and differential oil formulated with advanced additives technology. It is designed specially for high loaded hypoid gears and mechanisms running under severe loads and requiring API GL-5 lubricants. It provides wear resistance and oxidation stability for long equipment life. It also offers superior performance in rear wheeled vehicles and heavy equipment with differential axles.</div>
+                    </div>
+                    <div class="series__product_text11">
+                        <img class="series__product_logo series__product_logo1 false" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-3.png" alt="img_logo1">
+                        <img class="series__product_logo series__product_logo2 false" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-2.jpg" alt="img_logo2">
+                        <img class="series__product_logo series__product_logo3 false" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-1.jpg" alt="img_logo3">
+                    </div>
+                </div>
+
+            </li><!-- #endregion khan atf-->
         </ul>
     </div>
 </div>
