@@ -663,8 +663,39 @@ for(let i=0; i<lubricatingOilObj.length; i++){
 //#endregion making object event===========================================
 
 //#region main event==============================================================================
+jQuery('.series__name_big_list li').click(function(){
+    var idx = jQuery(this).index()
+    jQuery('.series__name_big_list li').removeClass('selected')
+    jQuery(this).addClass('selected')
+    jQuery('.series__name_list li').removeClass('appear')
+    if(idx==0){
+        jQuery('.series__name_list li').eq(0).addClass('appear')
+        jQuery('.series__name_list li').eq(1).addClass('appear')
+        jQuery('.series__name_list li').eq(2).addClass('appear')
+        jQuery('.series__name_list li').eq(3).addClass('appear')
+    }else if(idx==1){
+        jQuery('.series__name_list li').eq(4).addClass('appear')
+    }else if(idx==2){
+        jQuery('.series__name_list li').eq(5).addClass('appear')
+        jQuery('.series__name_list li').eq(6).addClass('appear')
+        jQuery('.series__name_list li').eq(7).addClass('appear')
+        jQuery('.series__name_list li').eq(8).addClass('appear')
+        jQuery('.series__name_list li').eq(9).addClass('appear')
+    }else if(idx==3){
+        jQuery('.series__name_list li').eq(10).addClass('appear')
+    }else if(idx==4){
+        jQuery('.series__name_list li').eq(15).addClass('appear')
+    }else if(idx==5){
+        jQuery('.series__name_list li').eq(11).addClass('appear')
+    }else if(idx==6){
+        jQuery('.series__name_list li').eq(12).addClass('appear')
+        jQuery('.series__name_list li').eq(13).addClass('appear')
+    }else if(idx==7){
+        jQuery('.series__name_list li').eq(14).addClass('appear')
+    }
+})
 jQuery('.series__name_listitem').click(function(){//product menu fn
-    idx = jQuery(this).index()
+    var idx = jQuery(this).index()
     jQuery('.series__name_listitem').removeClass('selected')
     jQuery(this).addClass('selected')
     jQuery('li.series__product_listitem').removeClass('selected')

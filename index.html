@@ -8,14 +8,24 @@
     <link rel="stylesheet" href="/index.css">
 </head>
 <body>
+    <ul class="series__name_big_list">
+        <li class="selected">PASSENGER CAR</li>
+        <li>PASSENGER 디젤</li>
+        <li>HEAVY DUTY</li>
+        <li>ATF TRANSMISSION</li>
+        <li>CVT TRANSMISSION</li>
+        <li>MTF TRANSMISSION</li>
+        <li>HYDRAULIC OIL</li>
+        <li>MOTORCYCLE</li>
+    </ul>
     <!-- series_-container 엘리먼트를 통째로 복붙하세요 -->
 <div class="series__container">
     <div class="series__name_container">
         <ul class="series__name_list">
-            <li data-series="khanGoli" class="series__name_listitem selected"><p>KHAN GOLI</p></li>
-            <li data-series="khanPao" class="series__name_listitem"><p>KHAN PAO</p></li>
-            <li data-series="khanG" class="series__name_listitem"><p>KHAN G</p></li>
-            <li data-series="khan" class="series__name_listitem deactivated"><p>KHAN G-SL</p></li>
+            <li data-series="khanGoli" class="series__name_listitem selected appear"><p>KHAN GOLI</p></li>
+            <li data-series="khanPao" class="series__name_listitem appear"><p>KHAN PAO</p></li>
+            <li data-series="khanG" class="series__name_listitem appear"><p>KHAN G</p></li>
+            <li data-series="khan" class="series__name_listitem deactivated appear"><p>KHAN G-SL</p></li>
             <li data-series="khanD" class="series__name_listitem"><p>KHAN D</p></li>
             <li data-series="khan" class="series__name_listitem deactivated"><p>KHAN C-8</p></li>
             <li data-series="khanC7" class="series__name_listitem"><p>KHAN C-7</p></li>
@@ -27,6 +37,7 @@
             <li data-series="khanAtf" class="series__name_listitem"><p>KHAN ATF</p></li>
             <li data-series="khanAw" class="series__name_listitem deactivated"><p>KHAN HYDRAULIC AW</p></li>
             <li data-series="khanHv" class="series__name_listitem deactivated"><p>KHAN HYDRAULIC HV</p></li>
+            <li data-series="khanHv" class="series__name_listitem deactivated"><p>준비중</p></li>
         </ul>
     </div>
     <div class="series__product_container">
@@ -922,6 +933,9 @@
                 </div>
 
             </li><!-- #endregion khan hv...prepare-->
+            <li id="prepare" class="series__product_listitem">
+                <p class="prepare">We are currently preparing this product</p>
+            </li>
         </ul>
     </div>
 </div>
