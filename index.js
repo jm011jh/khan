@@ -298,7 +298,7 @@ const khanD = jQuery('#khanD')
 //#region KHAN C-8 ...waiting......=======================================
 var khanc801 = {
     name: '10W-30',
-    style:'FULL SYNTHETIC DIESEL',
+    style:'SYNTHETIC DIESEL',
     level:'API CK-4 ACEA E7, E9 MERCEDES-BENZ : MB 228.31 Cummins : CES 20086 Volvo : VDS-4.5  Mack : EO-S-4.5 MTU : Category 2.1 Renault Truck : RLD-4 Detroit : DFS93K222 Caterpillar : ECF-3 Deutz : DQC lll-10 LA  Ford WSS-M2C171-F1',
     logoSAE:'false',
     logoFor:'false',
@@ -461,7 +461,7 @@ const khanC3 = jQuery('#khanC3')
 //#endregion KHAN C-3 ...waiting......===============================================
 //#region KHAN BIKE 4T===============================================================
 var khanbike01 = {
-    name: '4T 10W-40',
+    name: '10W-40',
     style:'FULLY SYNTHETIC BIKE',
     level:'API SN JASO MB',
     logoSAE:'false',
@@ -469,7 +469,7 @@ var khanbike01 = {
     logo0W: 'false'
 }
 var khanbike02 = {
-    name: '4T 20W-50',
+    name: '20W-50',
     style:'FULLY SYNTHETIC BIKE',
     level:'API SL JASO MA2',
     logoSAE:'false',
@@ -477,7 +477,7 @@ var khanbike02 = {
     logo0W: 'false'
 }
 var khanbike03 = {
-    name: '4T 10W-30',
+    name: '10W-30',
     style:'FULLY SYNTHETIC BIKE',
     level:'API SL/CF JASO MA',
     logoSAE:'false',
@@ -485,7 +485,7 @@ var khanbike03 = {
     logo0W: 'false'
 }
 var khanbike04 = {
-    name: '4T 10W-40',
+    name: '10W-40',
     style:'FULLY SYNTHETIC BIKE',
     level:'API SL/CF JASO MA',
     logoSAE:'false',
@@ -493,7 +493,7 @@ var khanbike04 = {
     logo0W: 'false'
 }
 var khanbike05 = {
-    name: '4T 20W-40',
+    name: '20W-40',
     style:'FULLY SYNTHETIC BIKE',
     level:'API SL/CF JASO MA',
     logoSAE:'false',
@@ -501,7 +501,7 @@ var khanbike05 = {
     logo0W: 'false'
 }
 var khanbike06 = {
-    name: '4T 20W-50',
+    name: '20W-50',
     style:'FULLY SYNTHETIC BIKE',
     level:'API SL/CF JASO MA',
     logoSAE:'false',
@@ -513,7 +513,7 @@ const khanBike = jQuery('#khanBike')
 //#endregion KHAN BIKE 4T===============================================================
 //#region KHAN MTF GL-5==================================================
 var khanmtf01 = {
-    name: 'KHAN MTF GL-5 75W-90',
+    name: '75W-90',
     style:'Manual Transmission Fluid',
     level:'API GL-5 MIL-L-2105D',
     logoSAE:'false',
@@ -521,7 +521,7 @@ var khanmtf01 = {
     logo0W: 'false'
 }
 var khanmtf02 = {
-    name: 'KHAN MTF GL-5 80W-90',
+    name: '80W-90',
     style:'Manual Transmission Fluid',
     level:'API GL-5 MIL-L-2105D',
     logoSAE:'false',
@@ -529,7 +529,7 @@ var khanmtf02 = {
     logo0W: 'false'
 }
 var khanmtf03 = {
-    name: 'KHAN MTF GL-5 85W-140',
+    name: '85W-140',
     style:'Manual Transmission Fluid',
     level:'API GL-5 MIL-L-2105D',
     logoSAE:'false',
