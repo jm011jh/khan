@@ -682,10 +682,10 @@ jQuery('.series__name_big_list li').click(function(){
         jQuery('.series__name_listitem').eq(4).addClass('selected')
         jQuery('.series__name_list li').eq(4).addClass('appear')
     }else if(idx==2){
-        jQuery('li.series__product_listitem').eq(5).addClass('selected')
-        jQuery('.series__name_listitem').eq(5).addClass('selected')
-        jQuery('.series__name_list li').eq(5).addClass('appear')
+        jQuery('li.series__product_listitem').eq(6).addClass('selected')
+        jQuery('.series__name_listitem').eq(6).addClass('selected')
         jQuery('.series__name_list li').eq(6).addClass('appear')
+        jQuery('.series__name_list li').eq(5).addClass('appear')
         jQuery('.series__name_list li').eq(7).addClass('appear')
         jQuery('.series__name_list li').eq(8).addClass('appear')
         jQuery('.series__name_list li').eq(9).addClass('appear')
