@@ -690,9 +690,9 @@ jQuery('.series__name_big_list li').click(function(){
         jQuery('.series__name_list li').eq(8).addClass('appear')
         jQuery('.series__name_list li').eq(9).addClass('appear')
     }else if(idx==3){
-        jQuery('li.series__product_listitem').eq(10).addClass('selected')
-        jQuery('.series__name_listitem').eq(10).addClass('selected')
-        jQuery('.series__name_list li').eq(10).addClass('appear')
+        jQuery('li.series__product_listitem').eq(12).addClass('selected')
+        jQuery('.series__name_listitem').eq(12).addClass('selected')
+        jQuery('.series__name_list li').eq(12).addClass('appear')
     }else if(idx==4){
         jQuery('li.series__product_listitem').eq(15).addClass('selected')
         jQuery('.series__name_listitem').eq(15).addClass('selected')
@@ -702,14 +702,14 @@ jQuery('.series__name_big_list li').click(function(){
         jQuery('.series__name_listitem').eq(11).addClass('selected')
         jQuery('.series__name_list li').eq(11).addClass('appear')
     }else if(idx==6){
-        jQuery('li.series__product_listitem').eq(12).addClass('selected')
-        jQuery('.series__name_listitem').eq(12).addClass('selected')
-        jQuery('.series__name_list li').eq(12).addClass('appear')
+        jQuery('li.series__product_listitem').eq(13).addClass('selected')
+        jQuery('.series__name_listitem').eq(13).addClass('selected')
         jQuery('.series__name_list li').eq(13).addClass('appear')
-    }else if(idx==7){
-        jQuery('li.series__product_listitem').eq(14).addClass('selected')
-        jQuery('.series__name_listitem').eq(14).addClass('selected')
         jQuery('.series__name_list li').eq(14).addClass('appear')
+    }else if(idx==7){
+        jQuery('li.series__product_listitem').eq(10).addClass('selected')
+        jQuery('.series__name_listitem').eq(10).addClass('selected')
+        jQuery('.series__name_list li').eq(10).addClass('appear')
     }
 })
 jQuery('.series__name_listitem').click(function(){//product menu fn
