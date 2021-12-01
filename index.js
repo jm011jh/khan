@@ -668,29 +668,47 @@ jQuery('.series__name_big_list li').click(function(){
     jQuery('.series__name_big_list li').removeClass('selected')
     jQuery(this).addClass('selected')
     jQuery('.series__name_list li').removeClass('appear')
+    jQuery('.series__name_listitem').removeClass('selected')
+    jQuery('li.series__product_listitem').removeClass('selected')
     if(idx==0){
+        jQuery('.series__name_listitem').eq(0).addClass('selected')
+        jQuery('li.series__product_listitem').eq(0).addClass('selected')
         jQuery('.series__name_list li').eq(0).addClass('appear')
         jQuery('.series__name_list li').eq(1).addClass('appear')
         jQuery('.series__name_list li').eq(2).addClass('appear')
         jQuery('.series__name_list li').eq(3).addClass('appear')
     }else if(idx==1){
+        jQuery('li.series__product_listitem').eq(4).addClass('selected')
+        jQuery('.series__name_listitem').eq(4).addClass('selected')
         jQuery('.series__name_list li').eq(4).addClass('appear')
     }else if(idx==2){
+        jQuery('li.series__product_listitem').eq(5).addClass('selected')
+        jQuery('.series__name_listitem').eq(5).addClass('selected')
         jQuery('.series__name_list li').eq(5).addClass('appear')
         jQuery('.series__name_list li').eq(6).addClass('appear')
         jQuery('.series__name_list li').eq(7).addClass('appear')
         jQuery('.series__name_list li').eq(8).addClass('appear')
         jQuery('.series__name_list li').eq(9).addClass('appear')
     }else if(idx==3){
+        jQuery('li.series__product_listitem').eq(10).addClass('selected')
+        jQuery('.series__name_listitem').eq(10).addClass('selected')
         jQuery('.series__name_list li').eq(10).addClass('appear')
     }else if(idx==4){
+        jQuery('li.series__product_listitem').eq(15).addClass('selected')
+        jQuery('.series__name_listitem').eq(15).addClass('selected')
         jQuery('.series__name_list li').eq(15).addClass('appear')
     }else if(idx==5){
+        jQuery('li.series__product_listitem').eq(11).addClass('selected')
+        jQuery('.series__name_listitem').eq(11).addClass('selected')
         jQuery('.series__name_list li').eq(11).addClass('appear')
     }else if(idx==6){
+        jQuery('li.series__product_listitem').eq(12).addClass('selected')
+        jQuery('.series__name_listitem').eq(12).addClass('selected')
         jQuery('.series__name_list li').eq(12).addClass('appear')
         jQuery('.series__name_list li').eq(13).addClass('appear')
     }else if(idx==7){
+        jQuery('li.series__product_listitem').eq(14).addClass('selected')
+        jQuery('.series__name_listitem').eq(14).addClass('selected')
         jQuery('.series__name_list li').eq(14).addClass('appear')
     }
 })
