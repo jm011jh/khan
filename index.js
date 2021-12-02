@@ -679,6 +679,7 @@ var khanhv03 = {
     level:'ISO VG 68',
     logo16:'false',
     logoFor:'false',
+    logoAPISP: 'false',
     description: 'KHAN HYDRAULIC HV 68 is a high viscosity hydraulic fluid to designed for providing not only outstanding protection and performance but also excellent thermal and oxidation stability with the latest additives technology. It is suitable for use in most industrial hydraulic and mobile equipment operations including high pressure hydraulic systems.',
 }
 const khanHvProduct = [khanhv01,khanhv02,khanhv03]
