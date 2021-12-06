@@ -690,7 +690,7 @@ const khanHvProduct = [khanhv01,khanhv02,khanhv03]
 const khanHv = jQuery('#khanHv')
 //#endregion KHAN HYDRAULIC HV ...waiting...============================
 // #endregion product information=======================================
-
+const khanPrepare = jQuery('#khanPrepare')
 //#region making object event===========================================
 function insertPdBtn(parent,product){//parent=jquery-selector, product=array
     for(i=0;i<product.length;i++){
@@ -757,52 +757,51 @@ for(let i=0; i<lubricatingOilObj.length; i++){
 //#region main event==============================================================================
 jQuery('.series__name_big_list li').click(function(){
     var idx = jQuery(this).index()
+    var listWrap = jQuery('.series__name_list');
     jQuery('.series__name_big_list li').removeClass('selected')
     jQuery(this).addClass('selected')
     jQuery('.series__name_list li').removeClass('appear')
     jQuery('.series__name_listitem').removeClass('selected')
     jQuery('li.series__product_listitem').removeClass('selected')
     if(idx==0){//passenger car
-        jQuery('.series__name_listitem').eq(0).addClass('selected')
-        jQuery('li.series__product_listitem').eq(0).addClass('selected')
-        jQuery('.series__name_list li').eq(0).addClass('appear')
-        jQuery('.series__name_list li').eq(1).addClass('appear')
-        jQuery('.series__name_list li').eq(2).addClass('appear')
-        jQuery('.series__name_list li').eq(3).addClass('appear')
+        khanGoli.addClass('selected')
+        listWrap.find('#listKhanGoli').addClass('selected')
+        listWrap.find('#listKhanGoli').addClass('appear')
+        listWrap.find('#listKhanPao').addClass('appear')
+        listWrap.find('#listKhanG').addClass('appear')
+        listWrap.find('#listKhanGsl').addClass('appear')
     }else if(idx==1){//passenger diesel
-        jQuery('li.series__product_listitem').eq(4).addClass('selected')
-        jQuery('.series__name_listitem').eq(4).addClass('selected')
-        jQuery('.series__name_list li').eq(4).addClass('appear')
+        khanD.addClass('selected')
+        listWrap.find('#listKhanD').addClass('selected')
+        listWrap.find('#listKhanD').addClass('appear')
     }else if(idx==2){//heavy duty
-        jQuery('li.series__product_listitem').eq(6).addClass('selected')
-        jQuery('.series__name_listitem').eq(6).addClass('selected')
-        jQuery('.series__name_list li').eq(6).addClass('appear')
-        jQuery('.series__name_list li').eq(5).addClass('appear')
-        jQuery('.series__name_list li').eq(7).addClass('appear')
-        jQuery('.series__name_list li').eq(8).addClass('appear')
-        jQuery('.series__name_list li').eq(9).addClass('appear')
+        khanC7.addClass('selected')
+        listWrap.find('#listKhanC7').addClass('selected')
+        listWrap.find('#listKhanC7').addClass('appear')
+        listWrap.find('#listKhanC8').addClass('appear')
+        listWrap.find('#listKhanC6').addClass('appear')
+        listWrap.find('#listKhanC5').addClass('appear')
+        listWrap.find('#listKhanC3').addClass('appear')
     }else if(idx==3){//atf transmission
-        jQuery('li.series__product_listitem').eq(12).addClass('selected')
-        jQuery('.series__name_listitem').eq(12).addClass('selected')
-        jQuery('.series__name_list li').eq(12).addClass('appear')
-        jQuery('.series__name_list li').eq(13).addClass('appear')
+        khanAtf3.addClass('selected')
+        listWrap.find('#listKhanAtf3').addClass('selected')
+        listWrap.find('#listKhanAtf3').addClass('appear')
+        listWrap.find('#listKhanAtfMulti').addClass('appear')
     }else if(idx==4){//cvt transmission
-        jQuery('li.series__product_listitem').eq(16).addClass('selected')
-        jQuery('.series__name_listitem').eq(16).addClass('selected')
-        jQuery('.series__name_list li').eq(16).addClass('appear')
+        khanPrepare.addClass('selected')
     }else if(idx==5){//mtf transmission
-        jQuery('li.series__product_listitem').eq(11).addClass('selected')
-        jQuery('.series__name_listitem').eq(11).addClass('selected')
-        jQuery('.series__name_list li').eq(11).addClass('appear')
+        khanMtf.addClass('selected')
+        listWrap.find('#listKhanMtf').addClass('selected')
+        listWrap.find('#listKhanMtf').addClass('appear')
     }else if(idx==6){//hydraulic oil
-        jQuery('li.series__product_listitem').eq(14).addClass('selected')
-        jQuery('.series__name_listitem').eq(14).addClass('selected')
-        jQuery('.series__name_list li').eq(14).addClass('appear')
-        jQuery('.series__name_list li').eq(15).addClass('appear')
+        khanAw.addClass('selected')
+        listWrap.find('#listKhanAw').addClass('selected')
+        listWrap.find('#listKhanAw').addClass('appear')
+        listWrap.find('#listKhanHv').addClass('appear')
     }else if(idx==7){//motor cycle
-        jQuery('li.series__product_listitem').eq(10).addClass('selected')
-        jQuery('.series__name_listitem').eq(10).addClass('selected')
-        jQuery('.series__name_list li').eq(10).addClass('appear')
+        khanBike.addClass('selected')
+        listWrap.find('#listKhanBike').addClass('selected')
+        listWrap.find('#listKhanBike').addClass('appear')
     }
 })
 jQuery('.series__name_listitem').click(function(){//product menu fn

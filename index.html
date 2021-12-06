@@ -9,36 +9,36 @@
 </head>
 <body>
     <ul class="series__name_big_list">
-        <li class="selected">PASSENGER CAR</li>
-        <li>PASSENGER DIESEL</li>
-        <li>HEAVY DUTY</li>
-        <li>ATF TRANSMISSION</li>
-        <li>CVT TRANSMISSION</li>
-        <li>MTF TRANSMISSION</li>
-        <li>HYDRAULIC OIL</li>
-        <li>MOTORCYCLE</li>
+        <li data-series="passenger_car" class="selected">PASSENGER CAR</li>
+        <li data-series="passenger_diesel">PASSENGER DIESEL</li>
+        <li data-series="heavy_duty">HEAVY DUTY</li>
+        <li data-series="atf_transmission">ATF TRANSMISSION</li>
+        <li data-series="cvt transmission">CVT TRANSMISSION</li>
+        <li data-series="mtf transmission">MTF TRANSMISSION</li>
+        <li data-series="hydraulic oil">HYDRAULIC OIL</li>
+        <li data-series="motorcycle">MOTORCYCLE</li>
     </ul>
     <!-- series_-container 엘리먼트를 통째로 복붙하세요 -->
 <div class="series__container">
     <div class="series__name_container">
         <ul class="series__name_list">
-            <li data-series="khanGoli" class="series__name_listitem selected appear"><p>KHAN GOLI</p></li>
-            <li data-series="khanPao" class="series__name_listitem appear"><p>KHAN PAO</p></li>
-            <li data-series="khanG" class="series__name_listitem appear"><p>KHAN G</p></li>
-            <li data-series="khanGsl" class="series__name_listitem deactivated appear"><p>KHAN G-SL</p></li>
-            <li data-series="khanD" class="series__name_listitem"><p>KHAN D</p></li>
-            <li data-series="khanC8" class="series__name_listitem deactivated"><p>KHAN C-8</p></li>
-            <li data-series="khanC7" class="series__name_listitem"><p>KHAN C-7</p></li>
-            <li data-series="khanc6" class="series__name_listitem deactivated"><p>KHAN C-6</p></li>
-            <li data-series="khanc5" class="series__name_listitem deactivated"><p>KHAN C-5</p></li>
-            <li data-series="khanc3" class="series__name_listitem deactivated"><p>KHAN C-3</p></li>
-            <li data-series="khanBike" class="series__name_listitem"><p>KHAN BIKE 4T</p></li>
-            <li data-series="khanMtf" class="series__name_listitem"><p>KHAN MTF GL-5</p></li>
-            <li data-series="khanAtf3" class="series__name_listitem"><p>KHAN ATF 3</p></li>
-            <li data-series="khanAtfMulti" class="series__name_listitem"><p>KHAN ATF MULTI</p></li>
-            <li data-series="khanAw" class="series__name_listitem deactivated"><p>KHAN HYDRAULIC AW</p></li>
-            <li data-series="khanHv" class="series__name_listitem deactivated"><p>KHAN HYDRAULIC HV</p></li>
-            <li data-series="khanPrepare" class="series__name_listitem deactivated"><p>준비중</p></li>
+            <li id="listKhanGoli" class="series__name_listitem selected appear"><p>KHAN GOLI</p></li>
+            <li id="listKhanPao" class="series__name_listitem appear"><p>KHAN PAO</p></li>
+            <li id="listKhanG" class="series__name_listitem appear"><p>KHAN G</p></li>
+            <li id="listKhanGsl" class="series__name_listitem deactivated appear"><p>KHAN G-SL</p></li>
+            <li id="listKhanD" class="series__name_listitem"><p>KHAN D</p></li>
+            <li id="listKhanC8" class="series__name_listitem deactivated"><p>KHAN C-8</p></li>
+            <li id="listKhanC7" class="series__name_listitem"><p>KHAN C-7</p></li>
+            <li id="listKhanC6" class="series__name_listitem deactivated"><p>KHAN C-6</p></li>
+            <li id="listKhanC5" class="series__name_listitem deactivated"><p>KHAN C-5</p></li>
+            <li id="listKhanC3" class="series__name_listitem deactivated"><p>KHAN C-3</p></li>
+            <li id="listKhanBike" class="series__name_listitem"><p>KHAN BIKE 4T</p></li>
+            <li id="listKhanMtf" class="series__name_listitem"><p>KHAN MTF GL-5</p></li>
+            <li id="listKhanAtf3" class="series__name_listitem"><p>KHAN ATF 3</p></li>
+            <li id="listKhanAtfMulti" class="series__name_listitem"><p>KHAN ATF MULTI</p></li>
+            <li id="listKhanAw" class="series__name_listitem"><p>KHAN HYDRAULIC AW</p></li>
+            <li id="listKhanHv" class="series__name_listitem"><p>KHAN HYDRAULIC HV</p></li>
+            <li id="listKhanPrepare" class="series__name_listitem deactivated"><p>PREPARE</p></li>
         </ul>
     </div>
     <div class="series__product_container">
@@ -1009,7 +1009,7 @@
                 </div>
 
             </li><!-- #endregion khan hv...prepare-->
-            <li id="prepare" class="series__product_listitem">
+            <li id="khanPrepare" class="series__product_listitem">
                 <p class="prepare">We are currently preparing this product</p>
             </li>
         </ul>
