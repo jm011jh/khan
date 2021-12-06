@@ -603,8 +603,8 @@ var khanmtf03 = {
 const khanMtfProduct = [khanmtf01,khanmtf02,khanmtf03]
 const khanMtf = jQuery('#khanMtf')
 //#endregion KHAN MTF GL-5==================================================
-//#region KHAN ATF==========================================================
-var khanatf01 = {
+//#region KHAN ATF3==========================================================
+var khanatf301 = {
     name: 'KHAN ATF 3',
     style:'SYNTHETIC ATF',
     level:'Dexron IIIH/M | Allison C-4',
@@ -612,7 +612,11 @@ var khanatf01 = {
     logoFor:'false',
     logoAPISP: 'false'
 }
-var khanatf02 = {
+const khanAtf3Product = [khanatf301]
+const khanAtf3 = jQuery('#khanAtf3')
+//#endregion KHAN ATF3=======================================================
+//#region KHAN ATF==========================================================
+var khanatfmulti01 = {
     name: 'KHAN ATF MULTI',
     style:'SYNTHETIC ATF',
     level:'ATF MULTI',
@@ -620,8 +624,8 @@ var khanatf02 = {
     logoFor:'false',
     logoAPISP: 'false'
 }
-const khanAtfProduct = [khanatf01,khanatf02]
-const khanAtf = jQuery('#khanAtf')
+const khanAtfMultiProduct = [khanatfmulti01]
+const khanAtfMulti = jQuery('#khanAtfMulti')
 //#endregion KHAN ATF=======================================================
 //#region KHAN HYDRAULIC AW=================================================
 var khanaw01 = {
@@ -727,8 +731,8 @@ function insertPdBtn(parent,product){//parent=jquery-selector, product=array
     }
     parent.find('.series__product_text6listitem:first-child').addClass('clicked')
 }
-const lubricatingOilPro = [khanGoliProduct,khanPaoProduct,khanGProduct,khanGslProduct,khanDProduct,khanC8Product,khanC7Product,khanC6Product,khanC5Product,khanC3Product,khanBikeProduct,khanMtfProduct,khanAtfProduct,khanAwProduct,khanHvProduct]
-const lubricatingOilObj = [khanGoli,khanPao,khanG,khanGsl,khanD,khanC8,khanC7,khanC6,khanC5,khanC3,khanBike,khanMtf,khanAtf,khanAw,khanHv]
+const lubricatingOilPro = [khanGoliProduct,khanPaoProduct,khanGProduct,khanGslProduct,khanDProduct,khanC8Product,khanC7Product,khanC6Product,khanC5Product,khanC3Product,khanBikeProduct,khanMtfProduct,khanAtf3Product,khanAtfMultiProduct,khanAwProduct,khanHvProduct]
+const lubricatingOilObj = [khanGoli,khanPao,khanG,khanGsl,khanD,khanC8,khanC7,khanC6,khanC5,khanC3,khanBike,khanMtf,khanAtf3,khanAtfMulti,khanAw,khanHv]
 for(let i=0; i<lubricatingOilObj.length; i++){
     insertPdBtn(lubricatingOilObj[i],lubricatingOilPro[i])
 }
@@ -745,7 +749,7 @@ for(let i=0; i<lubricatingOilObj.length; i++){
 // insertPdBtn(khanC3,khanC3Product)
 // insertPdBtn(khanBike,khanBikeProduct)
 // insertPdBtn(khanMtf,khanMtfProduct)
-// insertPdBtn(khanAtf,khanAtfProduct)
+// insertPdBtn(khanAtf,khanAtf3Product)
 // insertPdBtn(khanAw,khanAwProduct)
 // insertPdBtn(khanHv,khanHvProduct)
 //#endregion making object event===========================================
@@ -758,18 +762,18 @@ jQuery('.series__name_big_list li').click(function(){
     jQuery('.series__name_list li').removeClass('appear')
     jQuery('.series__name_listitem').removeClass('selected')
     jQuery('li.series__product_listitem').removeClass('selected')
-    if(idx==0){
+    if(idx==0){//passenger car
         jQuery('.series__name_listitem').eq(0).addClass('selected')
         jQuery('li.series__product_listitem').eq(0).addClass('selected')
         jQuery('.series__name_list li').eq(0).addClass('appear')
         jQuery('.series__name_list li').eq(1).addClass('appear')
         jQuery('.series__name_list li').eq(2).addClass('appear')
         jQuery('.series__name_list li').eq(3).addClass('appear')
-    }else if(idx==1){
+    }else if(idx==1){//passenger diesel
         jQuery('li.series__product_listitem').eq(4).addClass('selected')
         jQuery('.series__name_listitem').eq(4).addClass('selected')
         jQuery('.series__name_list li').eq(4).addClass('appear')
-    }else if(idx==2){
+    }else if(idx==2){//heavy duty
         jQuery('li.series__product_listitem').eq(6).addClass('selected')
         jQuery('.series__name_listitem').eq(6).addClass('selected')
         jQuery('.series__name_list li').eq(6).addClass('appear')
@@ -777,24 +781,25 @@ jQuery('.series__name_big_list li').click(function(){
         jQuery('.series__name_list li').eq(7).addClass('appear')
         jQuery('.series__name_list li').eq(8).addClass('appear')
         jQuery('.series__name_list li').eq(9).addClass('appear')
-    }else if(idx==3){
+    }else if(idx==3){//atf transmission
         jQuery('li.series__product_listitem').eq(12).addClass('selected')
         jQuery('.series__name_listitem').eq(12).addClass('selected')
         jQuery('.series__name_list li').eq(12).addClass('appear')
-    }else if(idx==4){
-        jQuery('li.series__product_listitem').eq(15).addClass('selected')
-        jQuery('.series__name_listitem').eq(15).addClass('selected')
-        jQuery('.series__name_list li').eq(15).addClass('appear')
-    }else if(idx==5){
+        jQuery('.series__name_list li').eq(13).addClass('appear')
+    }else if(idx==4){//cvt transmission
+        jQuery('li.series__product_listitem').eq(16).addClass('selected')
+        jQuery('.series__name_listitem').eq(16).addClass('selected')
+        jQuery('.series__name_list li').eq(16).addClass('appear')
+    }else if(idx==5){//mtf transmission
         jQuery('li.series__product_listitem').eq(11).addClass('selected')
         jQuery('.series__name_listitem').eq(11).addClass('selected')
         jQuery('.series__name_list li').eq(11).addClass('appear')
-    }else if(idx==6){
-        jQuery('li.series__product_listitem').eq(13).addClass('selected')
-        jQuery('.series__name_listitem').eq(13).addClass('selected')
-        jQuery('.series__name_list li').eq(13).addClass('appear')
+    }else if(idx==6){//hydraulic oil
+        jQuery('li.series__product_listitem').eq(14).addClass('selected')
+        jQuery('.series__name_listitem').eq(14).addClass('selected')
         jQuery('.series__name_list li').eq(14).addClass('appear')
-    }else if(idx==7){
+        jQuery('.series__name_list li').eq(15).addClass('appear')
+    }else if(idx==7){//motor cycle
         jQuery('li.series__product_listitem').eq(10).addClass('selected')
         jQuery('.series__name_listitem').eq(10).addClass('selected')
         jQuery('.series__name_list li').eq(10).addClass('appear')

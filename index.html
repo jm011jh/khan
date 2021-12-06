@@ -25,19 +25,20 @@
             <li data-series="khanGoli" class="series__name_listitem selected appear"><p>KHAN GOLI</p></li>
             <li data-series="khanPao" class="series__name_listitem appear"><p>KHAN PAO</p></li>
             <li data-series="khanG" class="series__name_listitem appear"><p>KHAN G</p></li>
-            <li data-series="khan" class="series__name_listitem deactivated appear"><p>KHAN G-SL</p></li>
+            <li data-series="khanGsl" class="series__name_listitem deactivated appear"><p>KHAN G-SL</p></li>
             <li data-series="khanD" class="series__name_listitem"><p>KHAN D</p></li>
-            <li data-series="khan" class="series__name_listitem deactivated"><p>KHAN C-8</p></li>
+            <li data-series="khanC8" class="series__name_listitem deactivated"><p>KHAN C-8</p></li>
             <li data-series="khanC7" class="series__name_listitem"><p>KHAN C-7</p></li>
             <li data-series="khanc6" class="series__name_listitem deactivated"><p>KHAN C-6</p></li>
             <li data-series="khanc5" class="series__name_listitem deactivated"><p>KHAN C-5</p></li>
             <li data-series="khanc3" class="series__name_listitem deactivated"><p>KHAN C-3</p></li>
             <li data-series="khanBike" class="series__name_listitem"><p>KHAN BIKE 4T</p></li>
             <li data-series="khanMtf" class="series__name_listitem"><p>KHAN MTF GL-5</p></li>
-            <li data-series="khanAtf" class="series__name_listitem"><p>KHAN ATF</p></li>
+            <li data-series="khanAtf3" class="series__name_listitem"><p>KHAN ATF 3</p></li>
+            <li data-series="khanAtfMulti" class="series__name_listitem"><p>KHAN ATF MULTI</p></li>
             <li data-series="khanAw" class="series__name_listitem deactivated"><p>KHAN HYDRAULIC AW</p></li>
             <li data-series="khanHv" class="series__name_listitem deactivated"><p>KHAN HYDRAULIC HV</p></li>
-            <li data-series="khanHv" class="series__name_listitem deactivated"><p>준비중</p></li>
+            <li data-series="khanPrepare" class="series__name_listitem deactivated"><p>준비중</p></li>
         </ul>
     </div>
     <div class="series__product_container">
@@ -224,7 +225,7 @@
             <li id="khanGsl" class="series__product_listitem"><!--3 #region khan gsl...prepare-->
                 <div class="series__product_image_container prepare">
                     <ul class="series__product_image_list"><!-- khan gsl img by size -->
-                        <li class="series__product_image_listitem series__product_image_listitem_tincan1l selected"><p class="prepare">We are currently preparing this product</p></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan1l selected"><p class="prepare">We are currently preparing this product image</p></li>
                         <!-- <li class="series__product_image_listitem series__product_image_listitem_tincan1l selected"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/1L_G.png" alt="goli can 1L"></li>
                         <li class="series__product_image_listitem series__product_image_listitem_tincan4l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/4L_G.png" alt="goli can 4L"></li>
                         <li class="series__product_image_listitem series__product_image_listitem_tincan20l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/20L_G.png" alt="goli can 20L"></li>
@@ -766,7 +767,7 @@
                 </div>
 
             </li><!-- #endregion khan mtf-->
-            <li id="khanAtf" class="series__product_listitem"><!--12 #region khan atf -->
+            <li id="khanAtf3" class="series__product_listitem"><!--12 #region khan atf3 -->
                 <div class="series__product_image_container">
                     <ul class="series__product_image_list"><!-- khan mtf img by size -->
                         <li class="series__product_image_listitem series__product_image_listitem_tincan1l selected"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/1L_ATF-1.png" alt="MTF can 1L"></li>
@@ -779,7 +780,67 @@
                     </ul>
                 </div>
                 <div class="series__product_text_container">
-                    <div class="series__product_text1 series__main_tit">KHAN ATF</div>
+                    <div class="series__product_text1 series__main_tit">KHAN ATF 3</div>
+                    <div class="series__product_sub_wrap">
+                        <div class="series__product_text2 series__sub_tit">PERFORMANCE LEVEL</div>
+                        <div class="series__product_text3 series__small_tit">Meets the requirements of</div>
+                        <div class="series__product_text4 series__small_tit text_bold">Dexron IIIH/M | Allison C-4</div><!--object.level-->
+                    </div>
+                    <div class="series__product_sub_wrap">
+                        <div class="series__product_text5 series__sub_tit">VISCOSITY</div>
+                        <ul class="series__product_text6list">
+                            <!--object.name-->
+                        </ul>
+                    </div>
+                    <div class="series__product_sub_wrap">
+                        <div class="series__product_text7 series__sub_tit">Pakage size</div>
+                        <div class="series__product_text8">
+                            <div class="volume_tincan">
+                                <div class="volume_title series__small_tit text_bold">Tincan</div>
+                                <ul class="volume_sizelist">
+                                    <li data-type="tincan" data-size="1l" class="volume_size series__small_tit clicked">1L</li>
+                                    <li data-type="tincan" data-size="4l" class="volume_size series__small_tit">4L</li>
+                                    <li data-type="tincan" data-size="20l" class="volume_size series__small_tit">20L</li>
+                                    <li data-type="tincan" data-size="200l" class="volume_size series__small_tit">200L</li>
+                                </ul>
+                            </div>
+                            <div class="volume_plastic">
+                                <div class="volume_title series__small_tit text_bold">Plastic</div>
+                                <ul class="volume_sizelist">
+                                    <li data-type="plastic" data-size="1l" class="volume_size series__small_tit">1L</li>
+                                    <li data-type="plastic" data-size="4l" class="volume_size series__small_tit">4L</li>
+                                    <!-- <li data-type="plastic" data-size="6l" class="volume_size series__small_tit">6L</li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series__product_sub_wrap">
+                        <div class="series__product_text9 series__sub_tit">SYNTHETIC ATF</div><!--object.style-->
+                        <div class="series__product_text10 series__small_tit">KHAN ATF 3 is a fully synthetic premium automatic transmission fluid developed to meet the requirements in wide range of Asian, European, American 4 to 8 speeds ATFs. It provides excellent thermal and oxidation stability, preventing deposit and sludge in the transmission. As a result of these properties, it also provides stable driving experience and long oil life.</div>
+                    </div>
+                    <div class="series__product_text11">
+                        <img class="series__product_logo series__product_logo1 false" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-3.png" alt="img_logo1">
+                        <img class="series__product_logo series__product_logo2 false" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-2.jpg" alt="img_logo2">
+                        <img class="series__product_logo series__product_logo3 false" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/레이어-1.jpg" alt="img_logo3">
+                        <img class="series__product_logo series__product_logo4 true" src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/12/레이어-4.jpg" alt="img_logo4">
+                    </div>
+                </div>
+
+            </li><!-- #endregion khan atf-->
+            <li id="khanAtfMulti" class="series__product_listitem"><!--12 #region khan atf multi-->
+                <div class="series__product_image_container">
+                    <ul class="series__product_image_list"><!-- khan mtf img by size -->
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan1l selected"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/1L_ATF-1.png" alt="MTF can 1L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan4l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/4L_ATF-2.png" alt="MTF can 4L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan20l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/03/20L_ATF.png" alt="MTF can 20L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_tincan200l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/product_200L.png" alt="MTF can 200L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_plastic1l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/1L_ATF-1.png" alt="MTF plastic 1L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_plastic4l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/4L_ATF-1.png" alt="MTF plastic 4L"></li>
+                        <li class="series__product_image_listitem series__product_image_listitem_plastic6l"><img src="http://khanlubrica.cafe24.com/wp-content/uploads/2021/11/6L_ATF-1.png" alt="MTF plastic 6L"></li>
+                    </ul>
+                </div>
+                <div class="series__product_text_container">
+                    <div class="series__product_text1 series__main_tit">KHAN ATF MULTI</div>
                     <div class="series__product_sub_wrap">
                         <div class="series__product_text2 series__sub_tit">PERFORMANCE LEVEL</div>
                         <div class="series__product_text3 series__small_tit">Meets the requirements of</div>
