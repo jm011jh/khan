@@ -2,6 +2,14 @@
 
 // #region product information=======================================
 //#region KHAN GOLI info=============================================
+const lubricatingOilPro = new Array();
+const lubricatingOilObj = new Array();
+const lubricatingOilList = new Array();
+function lubricatingInit(Product,series,list){
+    lubricatingOilPro.push(Product)
+    lubricatingOilObj.push(series)
+    lubricatingOilList.push(list)
+}
 var khangoli01 = {
     name: '0W-16',
     style:'FULLY SYNTHETIC GASOLINE',
@@ -68,13 +76,14 @@ var khangoli07 = {
 }
 const khanGoliProduct = [khangoli01,khangoli02,khangoli03,khangoli04,khangoli05,khangoli06,khangoli07]
 const khanGoli = jQuery('#khanGoli')
+const listKhanGoli = jQuery('#listKhanGoli');
+lubricatingInit(khanGoliProduct,khanGoli,listKhanGoli)
 //#endregion KHAN GOLI info==================================================
 //#region KHAN PAO info==================================================
 var khanpao01 = {
     name: '0W-30',
     style:'FULLY SYNTHETIC GASOLINE',
     level:'API SN/CF ACEA C2-12, ACEA A5/B5-12 MB 229.31/229.51, VW 502.00/505.00, BMW LL-04',
-    level:'API SP-RC',
     logo16:'false',
     logoFor:'false',
     logoAPISP: 'false',
@@ -127,6 +136,8 @@ var khanpao06 = {
 }
 const khanPaoProduct = [khanpao01,khanpao02,khanpao03,khanpao04,khanpao05,khanpao06]
 const khanPao = jQuery('#khanPao')
+const listKhanPao = jQuery('#listKhanPao');
+lubricatingInit(khanPaoProduct,khanPao,listKhanPao);
 //#endregion KHAN PAO info==================================================
 //#region KHAN G info=======================================================
 var khang01 = {
@@ -230,6 +241,8 @@ var khang11 = {
 }
 const khanGProduct = [khang01,khang02,khang03,khang04,khang05,khang06,khang07,khang08,khang09,khang10,khang11]
 const khanG = jQuery('#khanG')
+const listKhanG = jQuery('#listKhanG');
+lubricatingInit(khanGProduct,khanG,listKhanG)
 //#endregion KHAN G info==================================================
 //#region KHAN G-SL ...waiting...=========================================
 var khangsl01={
@@ -279,6 +292,8 @@ var khangsl05={
 }
 const khanGslProduct=[khangsl01,khangsl02,khangsl03,khangsl04,khangsl05]
 const khanGsl = jQuery('#khanGsl')
+const listKhanGsl = jQuery('#listKhanGsl');
+lubricatingInit(khanGslProduct,khanGsl,listKhanGsl)
 //#endregion KHAN G-SL ...waiting...======================================
 //#region KHAN D info=====================================================
 var khand01 = {
@@ -328,6 +343,8 @@ var khand05 = {
 }
 const khanDProduct = [khand01,khand02,khand03,khand04,khand05]
 const khanD = jQuery('#khanD')
+const listKhanD = jQuery('#listKhanD');
+lubricatingInit(khanDProduct,khanD,listKhanD)
 //#endregion KHAN D info==================================================
 //#region KHAN C-8 ...waiting......=======================================
 var khanc801 = {
@@ -350,6 +367,8 @@ var khanc802 = {
 }
 const khanC8Product=[khanc801,khanc802]
 const khanC8 = jQuery('#khanC8')
+const listKhanC8 = jQuery('#listKhanC8');
+lubricatingInit(khanC8Product,khanC8,listKhanC8)
 //#endregion KHAN C-8 ...waiting......====================================
 //#region KHAN C-7========================================================
 var khanc701 = {
@@ -381,6 +400,8 @@ var khanc703 = {
 }
 const khanC7Product = [khanc701,khanc702,khanc703]
 const khanC7 = jQuery('#khanC7')
+const listKhanC7 = jQuery('#listKhanC7');
+lubricatingInit(khanC7Product,khanC7,listKhanC7)
 //#endregion KHAN C-7================================================================
 //#region KHAN C-6 ...waiting......==================================================
 var khanc601 = {
@@ -419,8 +440,10 @@ var khanc604 = {
     logoAPISP: 'false',
     logoAPI:'true',
 }
-const khanC6Product = [khanc601,khanc602,khanc603,khanc604]
-const khanC6 = jQuery('#khanC6')
+const khanC6Product = [khanc601,khanc602,khanc603,khanc604];
+const khanC6 = jQuery('#khanC6');
+const listKhanC6 = jQuery('#listKhanC6');
+lubricatingInit(khanC6Product,khanC6,listKhanC6)
 //#endregion KHAN C-6 ...waiting......===============================================
 //#region KHAN C-5 ...waiting......==================================================
 var khanc501 = {
@@ -461,6 +484,8 @@ var khanc504 = {
 }
 const khanC5Product = [khanc501,khanc502,khanc503,khanc504]
 const khanC5 = jQuery('#khanC5')
+const listKhanC5 = jQuery('#listKhanC5');
+lubricatingInit(khanC5Product,khanC5,listKhanC5)
 //#endregion KHAN C-5 ...waiting......===============================================
 //#region KHAN C-3 ...waiting......==================================================
 var khanc301 = {
@@ -510,6 +535,8 @@ var khanc305 = {
 }
 const khanC3Product = [khanc301,khanc302,khanc303,khanc304,khanc305]
 const khanC3 = jQuery('#khanC3')
+const listKhanC3 = jQuery('#listKhanC3');
+lubricatingInit(khanC3Product,khanC3,listKhanC3)
 //#endregion KHAN C-3 ...waiting......===============================================
 //#region KHAN BIKE 4T===============================================================
 var khanbike01 = {
@@ -574,6 +601,8 @@ var khanbike06 = {
 }
 const khanBikeProduct = [khanbike01,khanbike02,khanbike03,khanbike04,khanbike05,khanbike06]
 const khanBike = jQuery('#khanBike')
+const listKhanBike = jQuery('#listKhanBike');
+lubricatingInit(khanBikeProduct,khanBike,listKhanBike)
 //#endregion KHAN BIKE 4T===============================================================
 //#region KHAN MTF GL-5==================================================
 var khanmtf01 = {
@@ -602,6 +631,8 @@ var khanmtf03 = {
 }
 const khanMtfProduct = [khanmtf01,khanmtf02,khanmtf03]
 const khanMtf = jQuery('#khanMtf')
+const listKhanMtf = jQuery('#listKhanMtf');
+lubricatingInit(khanMtfProduct,khanMtf,listKhanMtf)
 //#endregion KHAN MTF GL-5==================================================
 //#region KHAN ATF3==========================================================
 var khanatf301 = {
@@ -614,6 +645,8 @@ var khanatf301 = {
 }
 const khanAtf3Product = [khanatf301]
 const khanAtf3 = jQuery('#khanAtf3')
+const listKhanAtf3 = jQuery('#listKhanAtf3');
+lubricatingInit(khanAtf3Product,khanAtf3,listKhanAtf3)
 //#endregion KHAN ATF3=======================================================
 //#region KHAN ATF==========================================================
 var khanatfmulti01 = {
@@ -626,6 +659,8 @@ var khanatfmulti01 = {
 }
 const khanAtfMultiProduct = [khanatfmulti01]
 const khanAtfMulti = jQuery('#khanAtfMulti')
+const listKhanAtfMulti = jQuery('#listKhanAtfMulti');
+lubricatingInit(khanAtfMultiProduct,khanAtfMulti,listKhanAtfMulti)
 //#endregion KHAN ATF=======================================================
 //#region KHAN HYDRAULIC AW=================================================
 var khanaw01 = {
@@ -657,6 +692,8 @@ var khanaw03 = {
 }
 const khanAwProduct = [khanaw01,khanaw02,khanaw03]
 const khanAw = jQuery('#khanAw')
+const listKhanAw = jQuery('#listKhanAw');
+lubricatingInit(khanAwProduct,khanAw,listKhanAw)
 //#end region KHAN HYDRAULIC AW=========================================
 //#region KHAN HYDRAULIC HV ...waiting...===============================
 var khanhv01 = {
@@ -688,9 +725,12 @@ var khanhv03 = {
 }
 const khanHvProduct = [khanhv01,khanhv02,khanhv03]
 const khanHv = jQuery('#khanHv')
+const listKhanHv = jQuery('#listKhanHv');
+lubricatingInit(khanHvProduct,khanHv,listKhanHv)
 //#endregion KHAN HYDRAULIC HV ...waiting...============================
 // #endregion product information=======================================
 const khanPrepare = jQuery('#khanPrepare')
+const listKhanPrepare = jQuery('#listKhanPrepare');
 //#region making object event===========================================
 function insertPdBtn(parent,product){//parent=jquery-selector, product=array
     for(i=0;i<product.length;i++){
@@ -701,107 +741,83 @@ function insertPdBtn(parent,product){//parent=jquery-selector, product=array
         var logo2 = product[i].logoFor;
         var logo3 = product[i].logoAPISP;
         var logo4 = product[i].logoAPI;
-        if(!logo4){logo4 = 'false'}
+        logo4 ? logo4 : 'false'
         if(product[i].description){
             var description = product[i].description
-            var li = jQuery('<li\
-                        data-style="'+style+'"\
-                        data-level="'+level+'"\
-                        data-logo1="'+logo1+'"\
-                        data-logo2="'+logo2+'"\
-                        data-logo3="'+logo3+'"\
-                        data-logo4="'+logo4+'"\
-                        data-desc="'+description+'"\
-                        class="series__product_text6listitem">\
-                        '+name+'\
-                        </li>');
+            var li = jQuery(`<li
+            data-style="${style}"
+            data-level="${level}"
+            data-logo1="${logo1}"
+            data-logo2="${logo2}"
+            data-logo3="${logo3}"
+            data-logo4="${logo4}"
+            data-desc="${description}"
+            class="series__product_text6listitem">
+            ${name}
+            </li>`);
         }else{
-            var li = jQuery('<li\
-            data-style="'+style+'"\
-            data-level="'+level+'"\
-            data-logo1="'+logo1+'"\
-            data-logo2="'+logo2+'"\
-            data-logo3="'+logo3+'"\
-            data-logo4="'+logo4+'"\
-            class="series__product_text6listitem">\
-            '+name+'\
-            </li>'); 
+            var li = jQuery(`<li
+            data-style="${style}"
+            data-level="${level}"
+            data-logo1="${logo1}"
+            data-logo2="${logo2}"
+            data-logo3="${logo3}"
+            data-logo4="${logo4}"
+            class="series__product_text6listitem">
+            ${name}
+            </li>`); 
         }
         parent.find('.series__product_text6list').append(li.clone())
     }
     parent.find('.series__product_text6listitem:first-child').addClass('clicked')
 }
-const lubricatingOilPro = [khanGoliProduct,khanPaoProduct,khanGProduct,khanGslProduct,khanDProduct,khanC8Product,khanC7Product,khanC6Product,khanC5Product,khanC3Product,khanBikeProduct,khanMtfProduct,khanAtf3Product,khanAtfMultiProduct,khanAwProduct,khanHvProduct]
-const lubricatingOilObj = [khanGoli,khanPao,khanG,khanGsl,khanD,khanC8,khanC7,khanC6,khanC5,khanC3,khanBike,khanMtf,khanAtf3,khanAtfMulti,khanAw,khanHv]
 for(let i=0; i<lubricatingOilObj.length; i++){
     insertPdBtn(lubricatingOilObj[i],lubricatingOilPro[i])
 }
-// console.log(lubricatingOilObj.length)
-// insertPdBtn(khanGoli,khanGoliProduct)
-// insertPdBtn(khanPao,khanPaoProduct)
-// insertPdBtn(khanG,khanGProduct)
-// insertPdBtn(khanGsl,khanGslProduct)
-// insertPdBtn(khanD,khanDProduct)
-// insertPdBtn(khanC8,khanC8Product)
-// insertPdBtn(khanC7,khanC7Product)
-// insertPdBtn(khanC6,khanC6Product)
-// insertPdBtn(khanC5,khanC5Product)
-// insertPdBtn(khanC3,khanC3Product)
-// insertPdBtn(khanBike,khanBikeProduct)
-// insertPdBtn(khanMtf,khanMtfProduct)
-// insertPdBtn(khanAtf,khanAtf3Product)
-// insertPdBtn(khanAw,khanAwProduct)
-// insertPdBtn(khanHv,khanHvProduct)
 //#endregion making object event===========================================
 
 //#region main event==============================================================================
+function selectAppear(series){
+    var idx = lubricatingOilObj.indexOf(series)
+    series.addClass('selected')
+    lubricatingOilList[idx].addClass('selected')
+    lubricatingOilList[idx].addClass('appear')
+}
+function prepare(){
+    khanPrepare.addClass('selected')
+}
 jQuery('.series__name_big_list li').click(function(){
     var idx = jQuery(this).index()
-    var listWrap = jQuery('.series__name_list');
     jQuery('.series__name_big_list li').removeClass('selected')
     jQuery(this).addClass('selected')
     jQuery('.series__name_list li').removeClass('appear')
     jQuery('.series__name_listitem').removeClass('selected')
     jQuery('li.series__product_listitem').removeClass('selected')
     if(idx==0){//passenger car
-        khanGoli.addClass('selected')
-        listWrap.find('#listKhanGoli').addClass('selected')
-        listWrap.find('#listKhanGoli').addClass('appear')
-        listWrap.find('#listKhanPao').addClass('appear')
-        listWrap.find('#listKhanG').addClass('appear')
-        listWrap.find('#listKhanGsl').addClass('appear')
+        selectAppear(khanGoli)
+        listKhanPao.addClass('appear')
+        listKhanG.addClass('appear')
+        listKhanGsl.addClass('appear')
     }else if(idx==1){//passenger diesel
-        khanD.addClass('selected')
-        listWrap.find('#listKhanD').addClass('selected')
-        listWrap.find('#listKhanD').addClass('appear')
+        selectAppear(khanD)
     }else if(idx==2){//heavy duty
-        khanC7.addClass('selected')
-        listWrap.find('#listKhanC7').addClass('selected')
-        listWrap.find('#listKhanC7').addClass('appear')
-        listWrap.find('#listKhanC8').addClass('appear')
-        listWrap.find('#listKhanC6').addClass('appear')
-        listWrap.find('#listKhanC5').addClass('appear')
-        listWrap.find('#listKhanC3').addClass('appear')
+        selectAppear(khanC7)
+        listKhanC8.addClass('appear')
+        listKhanC6.addClass('appear')
+        listKhanC5.addClass('appear')
+        listKhanC3.addClass('appear')
     }else if(idx==3){//atf transmission
-        khanAtf3.addClass('selected')
-        listWrap.find('#listKhanAtf3').addClass('selected')
-        listWrap.find('#listKhanAtf3').addClass('appear')
-        listWrap.find('#listKhanAtfMulti').addClass('appear')
+        selectAppear(khanAtf3)
+        listKhanAtfMulti.addClass('appear')
     }else if(idx==4){//cvt transmission
-        khanPrepare.addClass('selected')
+        prepare()
     }else if(idx==5){//mtf transmission
-        khanMtf.addClass('selected')
-        listWrap.find('#listKhanMtf').addClass('selected')
-        listWrap.find('#listKhanMtf').addClass('appear')
+        selectAppear(khanMtf)
     }else if(idx==6){//hydraulic oil
-        khanAw.addClass('selected')
-        listWrap.find('#listKhanAw').addClass('selected')
-        listWrap.find('#listKhanAw').addClass('appear')
-        listWrap.find('#listKhanHv').addClass('appear')
+        selectAppear(khanAw)
+        listKhanHv.addClass('appear')
     }else if(idx==7){//motor cycle
-        khanBike.addClass('selected')
-        listWrap.find('#listKhanBike').addClass('selected')
-        listWrap.find('#listKhanBike').addClass('appear')
+        selectAppear(khanBike)
     }
 })
 jQuery('.series__name_listitem').click(function(){//product menu fn
